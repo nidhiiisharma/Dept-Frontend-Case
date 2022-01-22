@@ -1,0 +1,109 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+  
+.header-menu {
+    position: absolute;
+    display: flex;
+    width: 10%;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+}
+
+.header-title {
+    padding: 1rem 1.25rem;
+    background-image: url("../../assets/hero_image_desktop.png");
+    background-position: right;
+    background-size: cover;
+}
+
+.header-title h1 {
+  margin: auto 0;
+  padding-top: 3rem;
+  font-family: "TekoRegular", sans-serif;
+  font-weight: 400;
+  font-size: 400px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 850px) {
+  .header {
+    height: 80vh;
+  }
+
+  .header-menu {
+    padding: 2rem 14rem;
+  }
+
+  .header-title {
+    padding: 2rem 14rem;
+    height: 100%;
+  }
+
+  .header-title h1 {
+    padding: 0;
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .header {
+    border: 1rem solid white;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-menu,
+  .header-title {
+    padding: 2rem 12rem;
+  }
+}
+
+.header-btn{
+  padding: 1rem 1.25rem 0rem;
+}
+
+.header-btn button{
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #0E0E0E;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.header-btn button:hover{
+  background: grey;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 850px) {
+  .header-btn {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+  }
+
+  .header-btn button {
+    padding: 1rem 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .header-btn {
+    bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-btn {
+    right: 13rem;
+  }
+}
+
+
