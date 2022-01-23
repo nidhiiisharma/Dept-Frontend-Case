@@ -1,0 +1,68 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-active {
+  background: none;
+}
+
+.logo{
+  height: 14px;
+  width: auto;
+  transition: height .2s;
+  cursor:pointer;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 78em;
+  height: 4em;
+  margin-left: 13em;
+  margin-top: 2.5em;
+  border-bottom: 1px solid #0E0E0E;
+}
+
+.navbar-btn {
+  cursor: pointer;
+  margin-left: auto;
+}
+  
+.navbar-btn span {
+  background: #272727;
+  display: block;
+  height: .15em;
+  width: 1.5em;
+  transition: transform 250ms;
+}
+  
+.navbar-btn span:nth-of-type(1) {
+  margin-bottom: .25em;
+}
+  
+.navbar-active .navbar-btn-active span:nth-of-type(1) {
+  color: white;
+  -webkit-transform: rotate(-45deg) translate(-.25em, .5em);
+  transform: rotate(-45deg) translate(-.25em, .5em);
+}
+  
+.navbar-active .navbar-btn-active span:nth-of-type(2) {
+  color: white;
+  -webkit-transform: rotate(45deg) translate(-.25em, -.5em);
+  transform: rotate(45deg) translate(-.25em, -.5em);
+}
+
+@media (min-width: 56.25rem){
+  .logo {
+    height: 28px
+   }
+}
+
+@media (max-width: 75em) {
+  .navbar-btn {
+    margin-right: 20em;
+  }
+}

@@ -1,20 +1,12 @@
-import React, { Component }from 'react';
-import logoBlack from "../../assets/dept_logo_black.svg";
-import logoWhite from "../../assets/dept_logo_white.svg";
+import React, { useState } from 'react';
+import Navbar from "../Navbar/Navbar";
+import Menu from "../Menu/Menu"
 import './Header.css';
 
-class Header extends Component {
-    state = {clicked: false}
-
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
-    render() {
+const Header = () => {
         return (
             <header className="header">
-                <div className="header-menu">
-                    <img className="logo" src={this.state.clicked ? logoWhite : logoBlack}></img>
-                </div>
+                <div className="header-menu"></div>
                 <div className="header-title">
                     <h1>Work</h1>
                 </div>
@@ -26,6 +18,4 @@ class Header extends Component {
             </header>
         )
     }
-}
-
 export default Header;
