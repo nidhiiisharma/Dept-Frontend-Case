@@ -2,7 +2,6 @@ import logoWhite from "../../assets/dept_logo_white.svg";
 import Facebook from "../../assets/facebook.png";
 import Twitter from "../../assets/twitter.png";
 import Instagram from "../../assets/instagram.png";
-import arrow from "../../assets/arrow.svg";
 import './Footer.css'
 
 const Footer = () => {
@@ -34,13 +33,7 @@ const Footer = () => {
           <p className="footer-text">Terms and conditions</p>
           <p className="footer-copyright">&#169; 2021 Dept Agency</p>
         </div>
-          {/* <a href="#header">
-            <button className="top-btn">
-              <svg src={arrow}></svg>
-              <span>top</span>
-            </button>
-            </a> */}
-        </div>
+      </div>
     </footer>
   )
 }

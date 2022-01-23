@@ -1,0 +1,79 @@
+.client-container {
+  background: #F3F6F6;
+  text-align: center;
+  padding: 4em 2em;
+  top: 4em;
+}
+  
+.client-title {
+  font-family: "TekoRegular";
+  font-size: 60px;
+  font-weight: 400;
+  color: #0E0E0E;
+  text-transform: uppercase;
+}
+  
+.client-text {
+  max-width: 35em;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0E0E0E;
+  font-size: 17px;
+  line-height: 27px;
+}
+    
+.client-logo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 5em;
+}
+
+.client-logo img {
+  width: 100%;
+  cursor: pointer;
+  transform: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.client-logo img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+@media (min-width: 56.25rem) {
+  .client-logo-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .clients__text {
+    font-size: 150%;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.9rem;
+    text-align: center;
+  }
+
+  .clients__title {
+    font-size: 300%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .clients__text {
+    font-size: 150%;
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .clients__title {
+    font-size: 350%;
+  }
+}

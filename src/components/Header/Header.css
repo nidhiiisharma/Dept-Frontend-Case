@@ -25,35 +25,8 @@
   padding-top: 3rem;
   font-family: "TekoRegular", sans-serif;
   font-weight: 400;
-  font-size: 400px;
+  font-size: 150px;
   text-transform: uppercase;
-}
-
-@media only screen and (min-width: 850px) {
-  .header {
-    height: 83vh;
-  }
-
-  .header-menu {
-    padding: 2rem 14rem;
-  }
-
-  .header-title {
-    font-size: 4rem;
-    padding: 2rem 14rem;
-    height: 100%;
-  }
-
-  .header-title h1 {
-    padding: 0;
-    padding-top: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .header {
-    border: 1rem solid white;
-  }
 }
 
 .header-btn{
@@ -76,14 +49,20 @@
   transition: all 0.5s ease-in-out;
 }
 
-@media only screen and (min-width: 1200px) {
-  .header-menu,
-  .header-title {
-    padding: 2rem 12rem;
-  }
-}
-
 @media only screen and (min-width: 850px) {
+  .header {
+    height: 83vh;
+  }
+
+  .header-menu {
+    padding: 2rem 14rem;
+  }
+
+  .header-title h1 {
+    padding: 0;
+    padding-top: 3rem;
+  }
+
   .header-btn {
     position: absolute;
     bottom: 3rem;
@@ -95,13 +74,28 @@
   }
 }
 
+@media (min-width: 56.25rem){
+  .header-title h1 {
+    font-size: 400px;
+  }
+}
+
 @media only screen and (min-width: 1025px) {
+  .header {
+    border: 1rem solid white;
+  }
+
   .header-btn {
     bottom: 5rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .header-menu,
+  .header-title {
+    padding: 2rem 12rem;
+  }
+
   .header-btn {
     right: 13rem;
   }

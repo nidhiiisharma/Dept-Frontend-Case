@@ -1,18 +1,28 @@
 .navbar {
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
+  transition: .2s;
+  transition-property: background-color,-webkit-backdrop-filter;
+  transition-property: background-color,backdrop-filter,-webkit-backdrop-filter;
 }
 
-.navbar-active {
-  background: none;
+.navbar-scroll.active {
+  background-color: hsla(0,0%,100%,.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .logo{
-  height: 14px;
+  height: 28px;
   width: auto;
-  transition: height .2s;
   cursor:pointer;
+}
+
+.navbar-logo-scroll.active {
+  height: 20px;
+  transition: height .2s;
 }
 
 .navbar-container {
@@ -24,6 +34,10 @@
   margin-left: 13em;
   margin-top: 2.5em;
   border-bottom: 1px solid #0E0E0E;
+}
+
+.navbar-container-scroll.active {
+  border-bottom: none;
 }
 
 .navbar-btn {
@@ -43,13 +57,13 @@
   margin-bottom: .25em;
 }
   
-.navbar-active .navbar-btn-active span:nth-of-type(1) {
+.navbar-menu-active .navbar-btn-active span:nth-of-type(1) {
   color: white;
   -webkit-transform: rotate(-45deg) translate(-.25em, .5em);
   transform: rotate(-45deg) translate(-.25em, .5em);
 }
   
-.navbar-active .navbar-btn-active span:nth-of-type(2) {
+.navbar-menu-active .navbar-btn-active span:nth-of-type(2) {
   color: white;
   -webkit-transform: rotate(45deg) translate(-.25em, -.5em);
   transform: rotate(45deg) translate(-.25em, -.5em);
