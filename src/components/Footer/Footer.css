@@ -6,7 +6,7 @@
 
 .footer-container {
   max-width: 77.5em;
-  padding: 0 1.25em;
+  /* padding: 0 1.25em; */
   margin: 0 auto;
 }
 
@@ -66,13 +66,14 @@
   margin-right: 1em;
 }
 
-.footer-info {
-  margin-right: 1.5em;
-}
-
 .footer-copyright {
   margin-top: 2em;
-  margin-right: 0;
+  margin-right: 0em;
+}
+
+.footer-btn {
+  display: none;
+  visibility: hidden;
 }
 
 @media (min-width: 60em) {
@@ -91,7 +92,7 @@
 
   .icons a {
     display: inline;
-    }
+  }
     
   .icons img {
     display: inline;
@@ -107,5 +108,38 @@
   .footer-copyright {
     text-align: right;
     margin: 0 0 0 auto;
+}
+
+  .footer-btn {
+    display: flex;
+    visibility: visible;
+    justify-content: center;
+    width: 10%;
+    background-color: #ffffff;
+    margin-left: 81.5em;
+  }
+
+  .footer-top-btn {
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 38%;
+    font-family: 'TekoRegular',
+    sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #1a18f7;
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+  }
+
+  .footer-top-btn img {
+    filter: invert(14%) sepia(95%) saturate(4414%) hue-rotate(244deg) brightness(86%) contrast(130%);
+    height: 2rem;
   }
 }

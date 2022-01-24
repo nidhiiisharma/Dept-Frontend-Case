@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logoBlack from "../../assets/dept_logo_black.svg";
+import Menu from "../Menu/Menu";
 import './Navbar.css';
 
 const Navbar = ({ showMenu, setShowMenu }) => {
@@ -22,12 +23,14 @@ const Navbar = ({ showMenu, setShowMenu }) => {
             <img className={`${'logo'} ${navbar ? 'navbar-logo-scroll active' : ''}`} src={logoBlack} alt="dept logo"></img>
           </a>
         <div className={`${'navbar-btn'} ${showMenu ? 'navbar-btn-active' : ''}`} 
-        onClick={() => setShowMenu(prevState => !prevState)}
-        >
+        onClick={() => setShowMenu(true)}>
           <span></span>
           <span></span>
         </div>
       </div>
+      {showMenu && (
+        <Menu onClose={() => setShowMenu(false)} />
+      )}
     </nav>
   )
 }

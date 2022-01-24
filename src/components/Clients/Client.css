@@ -1,8 +1,8 @@
 .client-container {
   background: #F3F6F6;
   text-align: center;
-  padding: 4em 2em;
-  top: 4em;
+  margin-top: 20em;
+  padding: 4em 2em 4em;
 }
   
 .client-title {

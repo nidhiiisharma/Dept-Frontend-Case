@@ -2,10 +2,19 @@ import logoWhite from "../../assets/dept_logo_white.svg";
 import Facebook from "../../assets/facebook.png";
 import Twitter from "../../assets/twitter.png";
 import Instagram from "../../assets/instagram.png";
+import topButton from "../../assets/top_button.svg"
 import './Footer.css'
 
 const Footer = () => {
   const links = ['work', 'services', 'industries', 'stories', 'about', 'careers', 'contact']
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+  })
+}
 
   return (
     <footer className="footer">
@@ -33,6 +42,12 @@ const Footer = () => {
           <p className="footer-text">Terms and conditions</p>
           <p className="footer-copyright">&#169; 2021 Dept Agency</p>
         </div>
+        <div className="footer-btn">
+          <button className="footer-top-btn" onClick={() => scrollToTop()}>
+            <img src={topButton} alt="up arrow icon" />
+            TOP
+          </button>
+      </div>
       </div>
     </footer>
   )

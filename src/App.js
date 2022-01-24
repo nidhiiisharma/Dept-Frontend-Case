@@ -13,7 +13,6 @@ const App = () => {
     <div className="App">
       <Header />
       <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
-      {showMenu && <Menu />}
       <Clients clientsLogo={clientLogos}/>
       <Footer />
     </div>

@@ -8,7 +8,7 @@
 .header-menu {
   position: absolute;
   display: flex;
-  width: 10%;
+  width: 12%;
   padding: 1rem 1.25rem;
   cursor: pointer;
 }
@@ -16,7 +16,7 @@
 .header-title {
   padding: 1rem 1.25rem;
   background-image: url("../../assets/hero_image_desktop.png");
-  background-position: right;
+  background-position: 50%;
   background-size: cover;
 }
 

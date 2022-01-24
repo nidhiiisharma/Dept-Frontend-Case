@@ -4,8 +4,6 @@
   top: 0;
   width: 100%;
   transition: .2s;
-  transition-property: background-color,-webkit-backdrop-filter;
-  transition-property: background-color,backdrop-filter,-webkit-backdrop-filter;
 }
 
 .navbar-scroll.active {
@@ -22,17 +20,17 @@
 
 .navbar-logo-scroll.active {
   height: 20px;
-  transition: height .2s;
+  transition: height .4s;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   flex-direction: row;
-  max-width: 78em;
+  max-width: 76.5em;
   height: 4em;
   margin-left: 13em;
-  margin-top: 2.5em;
+  margin-top: 4em;
   border-bottom: 1px solid #0E0E0E;
 }
 
@@ -55,18 +53,6 @@
   
 .navbar-btn span:nth-of-type(1) {
   margin-bottom: .25em;
-}
-  
-.navbar-menu-active .navbar-btn-active span:nth-of-type(1) {
-  color: white;
-  -webkit-transform: rotate(-45deg) translate(-.25em, .5em);
-  transform: rotate(-45deg) translate(-.25em, .5em);
-}
-  
-.navbar-menu-active .navbar-btn-active span:nth-of-type(2) {
-  color: white;
-  -webkit-transform: rotate(45deg) translate(-.25em, -.5em);
-  transform: rotate(45deg) translate(-.25em, -.5em);
 }
 
 @media (min-width: 56.25rem){

@@ -2,9 +2,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: 0;
+  width: 97.5vw;
   background: white;
+  border: 20px solid #fff;
 }
 
 .navbar-menu-container {
@@ -13,11 +14,24 @@
   height: 100%;
   overflow-y: auto;
 } 
+
+.menu-logo{
+  height: 28px;
+  width: auto;
+  cursor:pointer;
+  margin-left: 12em;
+  padding-top: 3.7em;
+}
+
+.navbar-menu-close{
+  text-align: right;
+}
   
 .navbar-menu-items {
-  padding: 5em 9em 0;
+  padding: 4em 6em 6em;
   max-width: 75em;
   margin: 0 auto;
+  overflow : auto;
 }
   
 .menu-item {
@@ -26,7 +40,7 @@
   text-transform: uppercase;
   font-family: "TekoRegular";
   text-align: right;
-  font-size: 4.5em;
+  font-size: 4.3em;
   line-height: 1.2;
   padding-top: 0.05em;
   border-bottom: 1px solid #A3A3A3;
@@ -39,7 +53,7 @@
   transform: translateX(-1rem);
   opacity: 0;
   content: '►';
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-right: 1rem;
   transition: all 160ms ease-in-out;
 }
@@ -53,15 +67,33 @@
   opacity: 1;
 }
 
+.close-icon {
+  display: inline;
+  width: 1%;
+  filter: invert(100%);
+  cursor: pointer;
+  padding-right: 14rem;
+}
+
 @media (min-width: 80rem){
   .navbar-menu {
-    border: 20px solid #fff;
     height: 100vh
+  }
+  .close-icon {
+    display: inline;
+    width: 1%;
+    filter: invert(100%);
   }
 }
 
 @media (min-width: 54em) {
   .menu-item {
-    font-size: 4.1em;
+    font-size: 4.3em;
   }
+}
+
+@media (min-width: 56.25rem){
+  .menu-logo {
+    height: 28px
+   }
 }
