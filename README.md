@@ -14,9 +14,9 @@ ReactJS as JavaScript framework
 
 2. open the project in the code editor of your choice with the command code .
 
-3. then run npm install to download the required packages
+3. run npm install to download the required packages
 
-4. then run npm start to see the project in your browser
+4. run npm start to see the project in your browser
 
 ## Reflection
 
