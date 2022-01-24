@@ -1,8 +1,8 @@
 import logoWhite from "../../assets/dept_logo_white.svg";
-import Facebook from "../../assets/facebook.png";
-import Twitter from "../../assets/twitter.png";
-import Instagram from "../../assets/instagram.png";
-import topButton from "../../assets/top_button.svg"
+import Facebook from "../../assets/icons/facebook.png";
+import Twitter from "../../assets/icons/twitter.png";
+import Instagram from "../../assets/icons/instagram.png";
+import topButton from "../../assets/icons/top_button.svg"
 import './Footer.css'
 
 const Footer = () => {

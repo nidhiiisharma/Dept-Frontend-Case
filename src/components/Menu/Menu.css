@@ -19,8 +19,8 @@
   height: 28px;
   width: auto;
   cursor:pointer;
-  margin-left: 12em;
-  padding-top: 3.7em;
+  margin-left: 13em;
+  padding-top: 2em;
 }
 
 .navbar-menu-close{
@@ -72,7 +72,7 @@
   width: 1%;
   filter: invert(100%);
   cursor: pointer;
-  padding-right: 14rem;
+  padding-right: 13.5rem;
 }
 
 @media (min-width: 80rem){

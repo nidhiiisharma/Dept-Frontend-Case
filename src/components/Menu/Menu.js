@@ -1,5 +1,5 @@
 import logoWhite from '../../assets/dept_logo_white.svg'
-import closeIcon from "../../assets/close_icon.png"
+import closeIcon from "../../assets/icons/close_icon.png"
 import './Menu.css'
 
 const Menu = ({ closeMenu }) => {

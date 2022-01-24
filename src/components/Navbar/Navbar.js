@@ -5,7 +5,6 @@ import './Navbar.css';
 
 const Navbar = ({ showMenu, setShowMenu }) => {
   const [navbar, setNavbar] = useState(false);
-
   const changeNavbarBackground = () => {
     if(window.scrollY >= 100){
       setNavbar(true);

@@ -15,7 +15,7 @@
 
 .header-title {
   padding: 1rem 1.25rem;
-  background-image: url("../../assets/hero_image_desktop.png");
+  background-image: url("../../assets/header.png");
   background-position: 50%;
   background-size: cover;
 }
@@ -60,7 +60,7 @@
 
   .header-title h1 {
     padding: 0;
-    padding-top: 3rem;
+    padding: 3rem 0rem;
   }
 
   .header-btn {
@@ -86,14 +86,14 @@
   }
 
   .header-btn {
-    bottom: 5rem;
+    bottom: 2rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .header-menu,
   .header-title {
-    padding: 2rem 12rem;
+    padding: 3rem 13rem;
   }
 
   .header-btn {

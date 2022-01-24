@@ -6,7 +6,6 @@
 
 .footer-container {
   max-width: 77.5em;
-  /* padding: 0 1.25em; */
   margin: 0 auto;
 }
 
@@ -78,7 +77,7 @@
 
 @media (min-width: 60em) {
   .footer {
-    padding: 8em 0;
+    padding: 4em 0;
   }
   
   .logo-footer {

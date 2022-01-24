@@ -1,7 +1,7 @@
 import React from "react";
 import "./Client.css"
 
-const Clients = ({ clientsIntro, clientsLogo }) => {
+const Clients = ({ clientsLogo }) => {
   return (
     <div className="client-container">
       <h2 className="client-title">Clients</h2>

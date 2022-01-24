@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
-import Menu from './components/Menu/Menu'
+import { useState } from "react";
 import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Clients from './components/clients/Client'
+import Clients from './components/Clients/Client'
+import Cases from "./components/Cases/Case";
 import { clientLogos } from "../src/data/clients-data"
+import { casesInfo } from "../src/data/cases-data"
 import './App.css';
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
+      <Cases casesInfo={casesInfo} />
       <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
       <Clients clientsLogo={clientLogos}/>
       <Footer />
